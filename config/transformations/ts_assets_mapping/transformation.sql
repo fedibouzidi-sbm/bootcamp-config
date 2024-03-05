@@ -1,5 +1,4 @@
->-
-  /* MAPPING_MODE_ENABLED: false */
+ /* MAPPING_MODE_ENABLED: false */
 
   /* {"version":1,"sourceType":"raw","mappings":[{"from":"","to":"id","asType":"BIGINT"},{"from":"","to":"name","asType":"STRING"},{"from":"","to":"externalId","asType":"STRING"},{"from":"","to":"metadata","asType":"MAP<STRING, STRING>"},{"from":"","to":"unit","asType":"STRING"},{"from":"","to":"assetId","asType":"BIGINT"},{"from":"","to":"description","asType":"STRING"},{"from":"","to":"securityCategories","asType":"ARRAY<BIGINT>"},{"from":"","to":"isStep","asType":"BOOLEAN"},{"from":"","to":"isString","asType":"BOOLEAN"},{"from":"","to":"dataSetId","asType":"BIGINT"},{"from":"","to":"unitExternalId","asType":"STRING"}]} */
 

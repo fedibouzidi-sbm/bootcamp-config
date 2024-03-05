@@ -92,28 +92,28 @@ bootstrap:
                 idp-source-name: bootcamp-11-prod-uc-001-oee-read # i.e. bootcamp-01-test-all-read
     namespaces:
             # Typical config will have a namespace for data sources ("src") and a namespace for use cases ("uc")
-            - ns-name: src
-              description: Data sources for the Ice Cream Factory # HINT
+        - ns-name: src
+          description: Data sources for the Ice Cream Factory     # HINT
 
               # Node names will normally follow src:001:srcname or uc:001:usecasename naming convention
-              ns-nodes:
-                  - node-name: src:001:sap
-                    description: Data from SAP # HINT
+          ns-nodes:
+              - node-name: src:001:sap
+                description: Data from SAP     # HINT
 
-                  - node-name: src:002:opcua
-                    description: Data from OPCUA # HINT
+              - node-name: src:002:opcua
+                description: Data from OPCUA     # HINT
             # HINT: Add another namespace below
-            - ns-name: uc
-              description: Data for UC # HINT
+        - ns-name: uc
+          description: Data for UC     # HINT
 
               # Node names will normally follow src:001:srcname or uc:001:usecasename naming convention
-              ns-nodes:
-                  - node-name: uc:001:oee
-                    description: Use case 001 Over all Equipment effectiveness
-                    shared-access:
-                        read:
-                            - node-name: src:001:sap
-                            - node-name: src:002:opcua
+          ns-nodes:
+              - node-name: uc:001:oee
+                description: Use case 001 Over all Equipment effectiveness
+                shared-access:
+                    read:
+                        - node-name: src:001:sap
+                        - node-name: src:002:opcua
 
 
 # de-facto standards for CDF CogniteClient and logger configuration.
